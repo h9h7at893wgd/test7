@@ -8,8 +8,10 @@
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
     <constant name="struts.devMode" value="true" />
 
+    <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
+
     <package name="example" namespace="/example" extends="struts-default">
-        <action name="HelloWorld" class="example.HelloWorld">
+        <action name="HelloWorld" class="helloWorld">
             <result>/example/HelloWorld.jsp</result>
         </action>
     </package>

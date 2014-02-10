@@ -13,6 +13,9 @@ public class HelloWorld extends ActionSupport {
 
     @Autowired
     private BasicDataSource dataSource;
+    public void setDataSource(BasicDataSource dataSource){
+    	this.dataSource = dataSource;
+    }
 
     public String execute() throws Exception {
 
